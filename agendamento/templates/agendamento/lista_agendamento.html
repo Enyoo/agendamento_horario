@@ -1,0 +1,16 @@
+{% extends 'agendamento/base.html' %}
+
+<h2>Agendamentoos</h2>
+
+{% block content %}
+{% for agendamento in agendamentos %}
+    <h3>
+        {{agendamento.id}}
+        {{agendamento.data}}
+        {{agendamento.horario_id}}
+        {{agendamento.usuario_id}}
+    </h3>
+{% endfor %}
+
+
+{% endblock %}
